@@ -4,7 +4,6 @@
 			parent::__construct();
 		}
 		public function insert($target){
-			
 			$st = $this->db->prepare("INSERT INTO papers (type,confidence,year,directory,module,semester,owner) values 
 				(:type,:confidence,:year,:directory,:module,:semester,:owner)");
 			Session::init();
@@ -16,6 +15,17 @@
 				':module' => $_POST['module'],
 				':semester' => $_POST['semester'],
 				':owner' => $_SESSION['loggedIn']
+			));
+		}
+		public function insertPapers($target){
+			$st = $this->db->prepare("INSERT INTO pastpapers (type,year,directory,module,semester) values 
+				(:type,:year,:directory,:module,:semester)");
+			$st->execute(array(
+				':type' => $_POST['type-paper'],
+				':year' => $_POST['year-paper'],
+				':directory' => $target,
+				':module' => $_POST['module-paper'],
+				':semester' => $_POST['semester-paper']
 			));
 		}
 	}

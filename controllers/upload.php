@@ -38,5 +38,35 @@
 			}	
 			header('location:'.URL.'upload');
 		}
+		public function paperup(){
+			require 'models/Upload_model.php';
+			if(isset($_POST['submit-paper'])){
+			    $filename = $_FILES["file-paper"]["name"];
+			    $source = $_FILES["file-paper"]["tmp_name"];
+			    $type = $_FILES["file-paper"]["type"];
+			    $name = explode(".", $filename);
+			    $target_path = "uploads/papers/".$filename;
+
+			    $target_file = $target_path . basename($_FILES["fileToUpload"]["name"]);
+
+			    if (file_exists($target_file)) {
+				    echo "Sorry, file already exists.";
+				    $uploadOk = 0;
+				}
+				else{
+				    if(move_uploaded_file($source, $target_path)) {
+				        $message = "Your .zip file was uploaded";
+						$target_path = URL."uploads/papers/".$filename;
+						$model3 = new Upload_model();
+				    	$model3->insertPapers($target_path);
+				    } else {    
+				        $message = "ERROR";
+				    }
+				    if($message) echo $message;
+				}			
+				
+			}	
+			header('location:'.URL.'upload');
+		}
 	}
 ?>
