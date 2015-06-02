@@ -15,7 +15,7 @@
 			    $source = $_FILES["file"]["tmp_name"];
 			    $type = $_FILES["file"]["type"];
 			    $name = explode(".", $filename);
-			    $target_path = "uploads/".$filename;
+			    $target_path = "uploads/answers/".$filename;
 
 			    $target_file = $target_path . basename($_FILES["fileToUpload"]["name"]);
 
@@ -26,7 +26,7 @@
 				else{
 				    if(move_uploaded_file($source, $target_path)) {
 				        $message = "Your .zip file was uploaded";
-						$target_path = URL."uploads/".$filename;
+						$target_path = URL."uploads/answers/".$filename;
 						$model2 = new Upload_model();
 				    	$model2->insert($target_path);
 				    } else {    

@@ -110,7 +110,7 @@
 <!-- past papers -->
 
 
-	<label>Answers</label>
+	<label>Past-Papers</label>
 <div class="row">
 	<div class="col-md-5">
 		<form enctype="multipart/form-data" method="post" action="<?php echo URL?>upload/paperup">
