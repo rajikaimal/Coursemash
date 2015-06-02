@@ -6,5 +6,12 @@
 		public function index(){
 			$this->view->render('answers/index',true);
 		}
+		public function search(){
+			$semester = $_POST['semester'];
+			$module = $_POST['module'];
+			$type = $_POST['type'];
+			$year = $_POST['year'];
+			
+		}
 	}
 ?>

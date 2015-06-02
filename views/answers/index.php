@@ -1,4 +1,21 @@
-	<form method="post" action="">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var frm = $('#ans');
+			frm.submit(function(env){
+				$.ajax({
+					type: frm.attr('method'),
+            		url: frm.attr('action'),
+           			data: frm.serialize(),
+            		success: function (data) {
+               			alert(data);
+            		}
+				});
+				env.preventDefault();
+			});
+		});
+	</script>
+
+	<form method="post" action="answers/search" id="ans">
 		<div class="row">
 			<div class="col-md-5">
 
