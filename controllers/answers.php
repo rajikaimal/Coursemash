@@ -11,7 +11,9 @@
 			$module = $_POST['module'];
 			$type = $_POST['type'];
 			$year = $_POST['year'];
-			
+			require 'models/Answer_model.php';
+			$model = new Answer_model();
+			return $model->search($semester,$module,$type,$year);
 		}
 	}
 ?>
