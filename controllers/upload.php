@@ -36,7 +36,7 @@
 				}			
 				
 			}	
-			header('location:'.URL.'upload');
+			//header('location:'.URL.'upload');
 		}
 		public function paperup(){
 			require 'models/Upload_model.php';

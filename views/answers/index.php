@@ -7,7 +7,16 @@
             		url: frm.attr('action'),
            			data: frm.serialize(),
             		success: function (data) {
-               			alert(data);
+               			$('#linkk').empty();
+               			$('#icon-x').empty();
+ 						var val = JSON.parse(data);
+ 						
+ 						for(var a = 0; a<val.length;a++){
+ 							var owner = val[a][0];
+        					var directory = val[a][1];
+ 							$('#icon-x').append("<p>" +  owner + "</p>");
+               				$('#linkk').append("<a href='" + directory +"'><img src='/Coursemash/views/answers/answer-icon.png' style='width:100px' /></a>");	
+ 						}
             		}
 				});
 				env.preventDefault();
@@ -121,3 +130,7 @@
 		});
 		</script> -->
 	</form>
+	<div id="results">
+		<label id="icon-x"></label>
+		<p id="linkk"></p>
+	</div>
