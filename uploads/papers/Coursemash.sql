@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 02, 2015 at 10:19 PM
+-- Generation Time: Jun 03, 2015 at 05:57 PM
 -- Server version: 5.5.43-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.9
 
@@ -36,14 +36,16 @@ CREATE TABLE IF NOT EXISTS `papers` (
   `semester` varchar(255) NOT NULL,
   `owner` varchar(255) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
 -- Dumping data for table `papers`
 --
 
 INSERT INTO `papers` (`Id`, `type`, `confidence`, `year`, `directory`, `module`, `semester`, `owner`) VALUES
-(32, 'mid', 0, 2014, 'http://localhost/Coursemash/uploads/answers/3g_modem_connect_D300_i386.deb', 'ITA', '1y2s', 'IT14118814');
+(32, 'mid', 0, 2014, 'http://localhost/Coursemash/uploads/answers/3g_modem_connect_D300_i386.deb', 'ITA', '1y2s', 'IT14118814'),
+(33, 'mid', 18, 2014, 'http://localhost/Coursemash/uploads/answers/AlbumArtSmall.jpg', 'ITA', '1y2s', 'IT14118814'),
+(34, 'mid', 60, 2014, 'http://localhost/Coursemash/uploads/answers/inbox.jpg', 'ITA', '1y2s', 'IT14118814');
 
 -- --------------------------------------------------------
 
@@ -59,14 +61,15 @@ CREATE TABLE IF NOT EXISTS `pastpapers` (
   `module` varchar(255) NOT NULL,
   `semester` varchar(255) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `pastpapers`
 --
 
 INSERT INTO `pastpapers` (`Id`, `type`, `year`, `directory`, `module`, `semester`) VALUES
-(1, 'mid', 2014, 'http://localhost/Coursemash/uploads/papers/Folder.jpg', 'IPE', '1y1s');
+(1, 'mid', 2014, 'http://localhost/Coursemash/uploads/papers/Folder.jpg', 'IPE', '1y1s'),
+(2, 'mid', 2014, 'http://localhost/Coursemash/uploads/papers/3g_modem_connect_D300_i386.deb', 'IPE', '1y1s');
 
 -- --------------------------------------------------------
 
