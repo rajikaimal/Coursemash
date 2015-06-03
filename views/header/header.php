@@ -46,7 +46,7 @@
                     <a href="<?php echo URL?>upload">Upload</a>
                 </li>
                 <li>
-                    <a href="#">Past papers</a>
+                    <a href="<?php echo URL?>papers">Past papers</a>
                 </li>
                 <li>
                     <a href="<?php echo URL?>profile">Profile</a>

@@ -10,11 +10,8 @@
                			$('#linkk').empty();
                			$('#icon-x').empty();
  						var val = JSON.parse(data);
- 						
  						for(var a = 0; a<val.length;a++){
- 							var owner = val[a][0];
-        					var directory = val[a][1];
- 							$('#icon-x').append("<p>" +  owner + "</p>");
+        					var directory = val[a];
                				$('#linkk').append("<a href='" + directory +"'><img src='/Coursemash/views/answers/answer-icon.png' style='width:100px' /></a>");	
  						}
             		}
@@ -23,8 +20,8 @@
 			});
 		});
 	</script>
-	<label>Download Anwsers</label>
-	<form method="post" action="answers/search" id="ans">
+	<label>Download Past-papers</label>
+	<form method="post" action="papers/search" id="ans">
 		<div class="row">
 			<div class="col-md-5">
 
