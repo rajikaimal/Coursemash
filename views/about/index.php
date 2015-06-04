@@ -12,7 +12,7 @@
 	delay for uploading since admins don't approve the uploads. </p>
 	<p><span class="glyphicon glyphicon-book"></span> Mutual respect plays 
 	a great role . So it would be great if you can express your confidence level precisely</p>
-	<p>Coursemash is an open-source project which you can find on <a href="https://github.com/xoRajika/Coursemash"> Github </a></p>
+	<p>Coursemash is an open-source project which you can find on <a href="https://github.com/xoRajika/Coursemash"> Github </a>, Pull requests are welcomed :-)</p>
 	<br/>
 	Cheers ! 
 	
