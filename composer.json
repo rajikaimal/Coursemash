@@ -1,0 +1,21 @@
+{
+    "name": "rajika/coursemash",
+    "description": "Online directory for papers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rajikaimal",
+            "email": "inbox.rajika@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "stats": ""
+        }
+    }
+}
