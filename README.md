@@ -1,4 +1,7 @@
 # Coursemash
+
+[![Build Status](https://travis-ci.org/rajikaimal/Coursemash.svg?branch=master)](https://travis-ci.org/rajikaimal/Coursemash)
+
 <p> * Coursemash is an online directory where students can upload answers , find past papers.
 Uploading can be done either anonymously or with an account . </p>
 
