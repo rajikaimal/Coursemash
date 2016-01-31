@@ -1,7 +1,9 @@
-<?php 
-	class Controller{
-		function __construct(){
-			$this->view = new View();
-		}
-	}
-?>
+<?php
+
+    class Controller
+    {
+        public function __construct()
+        {
+            $this->view = new View();
+        }
+    }
