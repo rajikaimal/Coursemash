@@ -2,10 +2,10 @@
 
 namespace stats\Test;
 
-class FirstTest extends \PHPUnit_Framework_TestCase
+class StarterTest extends \PHPUnit_Framework_TestCase
 {
-	public function testUselessness()
-	{
-		$this->assertTrue(true);
-	}
+    public function testUselessness()
+    {
+        $this->assertTrue(true);
+    }
 }

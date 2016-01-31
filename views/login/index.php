@@ -34,10 +34,10 @@
 					<tr>
 						<td>
 							<?php 
-								session_start();
-								echo "<label style='color:red'>".$_SESSION['error']."</label>";
-								//session_destroy();
-							?>
+                                session_start();
+                                echo "<label style='color:red'>".$_SESSION['error'].'</label>';
+                                //session_destroy();
+                            ?>
 						</td>	
 					</tr>	
 					
